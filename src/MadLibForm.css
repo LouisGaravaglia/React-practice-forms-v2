@@ -1,0 +1,18 @@
+.MadlibForm {
+    margin: 10%;
+}
+
+.MadlibForm input {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.MadlibForm-header {
+    
+}
+
+.MadlibResponse-word {
+    background-color: yellow;
+}
