@@ -9,10 +9,10 @@
     padding: 5px;
 }
 
-.MadlibForm-header {
-    
-}
-
 .MadlibResponse-word {
     background-color: yellow;
+}
+
+.MadlibForm-error {
+    color: red;
 }

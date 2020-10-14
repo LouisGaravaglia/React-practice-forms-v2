@@ -6,16 +6,20 @@ import "./MadLibForm.css"
 
 function MadlibForm() {
     const [dataSubmitted, setDataSubmitted] = useState(false);
-    const [formData, handleChange, resetForm] = useFields({
+    const INITIAL_STATE = {
         adjective: '',
         noun1: '',
         verb: '',
         noun2: ''
-    })
+    }
+    const [formData, handleChange, resetForm] = useFields(INITIAL_STATE)
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setDataSubmitted(data => !data);
+
+        
     }
 
     const restartGame = () => {
@@ -34,6 +38,8 @@ function MadlibForm() {
             value={formData.adjective}
             onChange={handleChange}
         />
+        {/* I was going to add validation, but then realized it was going to be a lot more intense and probably inefficent unless I used Formik, but I didn't really want to spend the time learing Formik right now, so hard pass. */}
+        {/* {adjIsInvalid && isTouched && <p className="MadlibForm-error">Error: "adjective" Field can not be left blank.</p>} */}
             <input 
             type="text"
             name="noun1"
@@ -75,6 +81,3 @@ function MadlibForm() {
 
 export default MadlibForm;
 
-
-//A famous chinese proverb says that to find happiness one
-// must be a LARGE BUTTERFLY who EATS forty-five THINGS a day

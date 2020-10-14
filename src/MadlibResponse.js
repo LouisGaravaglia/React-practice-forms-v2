@@ -16,4 +16,3 @@ function MadlibResponse({adjective, noun1, verb, noun2, restartGame}) {
 export default MadlibResponse;
 
 
-//a fastpresident whopoopedforty-five skittlesa daye a LARGE BUTTERFLY who EATS forty-five THINGS a day
